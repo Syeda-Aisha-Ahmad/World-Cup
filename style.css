@@ -77,6 +77,10 @@ p {
     color: #fff;
 }
 
+.arrow-icon {
+    padding-left: 50px;
+}
+
 
 
 /******************* Blog Section *********************/
@@ -228,12 +232,16 @@ hr {
 }
 
 .footer-text {
-    color: #CFD2CF;
-    font-size: 15px;
     display: flex;
     justify-content: space-evenly;
     margin: 5% 15%;
     width: 70%;
+}
+
+.footer-text a {
+    color: #dbdcdbaa;
+    font-size: 15px;
+    text-decoration: none;
 }
 
 /*------------------------- ANOTHER PAGE (Upcoming Match) ---------------------------*/
@@ -370,6 +378,7 @@ MEDIA QUERY For mobile device
         grid-template-columns: repeat(1, 1fr);
     }
 
+
     /* Footer Section */
 
     .footer-text {
@@ -377,7 +386,7 @@ MEDIA QUERY For mobile device
         flex-direction: column;
     }
 
-    .footer-text span {
+    .footer-text a {
         margin: 10px;
     }
 
@@ -467,6 +476,10 @@ MEDIA QUERY For Tablet device
         display: inline-block;
     }
 
+    .blog-none {
+        display: none;
+    }
+
     /* Footer Section */
 
     .footer-text {
@@ -474,7 +487,7 @@ MEDIA QUERY For Tablet device
         line-height: 50px;
     }
 
-    .footer-text span {
+    .footer-text a {
         margin: 10px;
         font-size: 20px;
     }
